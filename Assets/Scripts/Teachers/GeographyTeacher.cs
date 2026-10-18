@@ -124,9 +124,13 @@ public class GeographyTeacher : MonoBehaviour, IIteractable
             (chosen) =>
             {
                 if (chosen == correctIndex)
+                {
                     StartCoroutine(GiveRewardRoutine());
+                    TowerDefenseManager.Instance?.RegisterQuizAnswer(true);
+                }
                 else
                 {
+                    TowerDefenseManager.Instance?.RegisterQuizAnswer(false);
                     GeographyDialogUI.Instance.ShowResult("WRONG !   TRY   AGAIN   NEXT   TIME   :(");
                     StartCoroutine(ResetSpriteWithDelay());
                 }
