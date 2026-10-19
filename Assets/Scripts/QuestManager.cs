@@ -9,6 +9,9 @@ public class QuestManager : MonoBehaviour
 
     [HideInInspector] public bool craftingQuestStarted;
 
+    [HideInInspector] public bool towerDefenseStarted;
+    [HideInInspector] public bool towerDefenseCompleted;
+
     private void Awake()
     {
         Instance = this;
