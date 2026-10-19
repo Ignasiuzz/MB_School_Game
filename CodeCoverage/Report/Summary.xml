@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>10/19/2026 - 8:37:31 PM</Generatedon>
+    <Parser>MultiReportParser (16x OpenCoverParser)</Parser>
+    <Assemblies>2</Assemblies>
+    <Classes>30</Classes>
+    <Files>30</Files>
+    <Coveredlines>480</Coveredlines>
+    <Uncoveredlines>873</Uncoveredlines>
+    <Coverablelines>1353</Coverablelines>
+    <Totallines>2944</Totallines>
+    <Linecoverage>35.4</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>49</Coveredmethods>
+    <Totalmethods>192</Totalmethods>
+    <Methodcoverage>25.5</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="MyPlayModeTests" classes="2" coverage="100" coveredlines="275" coverablelines="275" totallines="918" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="26" totalmethods="26" methodcoverage="100">
+      <Class name="ItemDragHandlerTests" coverage="100" coveredlines="131" coverablelines="131" totallines="455" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
+      <Class name="QuestGiverTeacherTests" coverage="100" coveredlines="144" coverablelines="144" totallines="463" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
+    </Assembly>
+    <Assembly name="SchoolGame" classes="28" coverage="19" coveredlines="205" coverablelines="1078" totallines="2026" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="23" totalmethods="166" methodcoverage="13.8">
+      <Class name="BounceEffect" coverage="0" coveredlines="0" coverablelines="35" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="Chest" coverage="0" coveredlines="0" coverablelines="30" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
+      <Class name="Crafter" coverage="0" coveredlines="0" coverablelines="51" totallines="101" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="CraftingUI" coverage="0" coveredlines="0" coverablelines="55" totallines="108" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
+      <Class name="DynamicJoystick" coverage="0" coveredlines="0" coverablelines="24" totallines="41" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
+      <Class name="EndScene" coverage="0" coveredlines="0" coverablelines="10" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="GeographyDialogUI" coverage="0" coveredlines="0" coverablelines="37" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="GeographyTeacher" coverage="0" coveredlines="0" coverablelines="76" totallines="196" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
+      <Class name="GlobalHelper" coverage="0" coveredlines="0" coverablelines="3" totallines="9" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
+      <Class name="IdleBob" coverage="0" coveredlines="0" coverablelines="9" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="InteractionDetector" coverage="0" coveredlines="0" coverablelines="49" totallines="83" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="9" methodcoverage="0" />
+      <Class name="InventoryController" coverage="47.3" coveredlines="44" coverablelines="93" totallines="148" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="9" methodcoverage="55.5" />
+      <Class name="ItemDictionary" coverage="0" coveredlines="0" coverablelines="22" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="ItemDragHandler" coverage="100" coveredlines="44" coverablelines="44" totallines="71" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="Joystick" coverage="0" coveredlines="0" coverablelines="98" totallines="150" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="22" methodcoverage="0" />
+      <Class name="JoystickPanelManager" coverage="0" coveredlines="0" coverablelines="53" totallines="102" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="MapTransition" coverage="0" coveredlines="0" coverablelines="24" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="MathDialogUI" coverage="0" coveredlines="0" coverablelines="33" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="MathTeacher" coverage="0" coveredlines="0" coverablelines="61" totallines="104" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="9" methodcoverage="0" />
+      <Class name="MenuController" coverage="0" coveredlines="0" coverablelines="33" totallines="67" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
+      <Class name="PlayerItemCollector" coverage="0" coveredlines="0" coverablelines="17" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="PlayerMovementMobile" coverage="0" coveredlines="0" coverablelines="20" totallines="41" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="QuestGiverTeacher" coverage="82.3" coveredlines="70" coverablelines="85" totallines="159" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="10" methodcoverage="70" />
+      <Class name="QuestManager" coverage="100" coveredlines="6" coverablelines="6" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="QuestTeacherUI" coverage="71.9" coveredlines="41" coverablelines="57" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="6" methodcoverage="83.3" />
+      <Class name="SaveController" coverage="0" coveredlines="0" coverablelines="31" totallines="64" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="StartScene" coverage="0" coveredlines="0" coverablelines="10" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="TabController" coverage="0" coveredlines="0" coverablelines="12" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

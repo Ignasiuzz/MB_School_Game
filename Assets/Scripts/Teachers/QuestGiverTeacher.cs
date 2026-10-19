@@ -22,16 +22,6 @@ public class QuestGiverTeacher : MonoBehaviour, IIteractable
     {
         inventory = FindFirstObjectByType<InventoryController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // The defense tells us when the base survived all waves
-        if (TowerDefenseManager.Instance != null)
-            TowerDefenseManager.Instance.OnDefenseWon += OnDefenseWon;
-    }
-
-    void OnDestroy()
-    {
-        if (TowerDefenseManager.Instance != null)
-            TowerDefenseManager.Instance.OnDefenseWon -= OnDefenseWon;
     }
 
     public bool CanInteract() => true;
@@ -83,36 +73,14 @@ public class QuestGiverTeacher : MonoBehaviour, IIteractable
             return;
         }
 
-        TowerDefenseManager defense = TowerDefenseManager.Instance;
-
-        // Defense is already running, just remind the player
-        if (defense != null && defense.IsActive)
-        {
-            QuestTeacherUI.Instance.ShowMessage(
-                "DEFEND   THE   BASE!   BUILD   TOWERS   ON   THE   PLOTS!"
-            );
-
-            StartCoroutine(ResetSpriteWithDelay());
-            return;
-        }
-
         if (inventory.HasItem(finalCraftedItemID))
         {
-            if (defense != null)
-            {
-                // The item stays in the inventory until the base survives
-                QuestTeacherUI.Instance.ShowMessage(
-                    "THE   MONSTERS   ARE   COMING!   DEFEND   THE   BASE!"
-                );
+            inventory.RemoveItemByID(finalCraftedItemID);
 
-                defense.BeginDefense();
-                StartCoroutine(ResetSpriteWithDelay());
-            }
-            else
-            {
-                // No tower defense in this scene, finish like before
-                FinishGame();
-            }
+            QuestTeacherUI.Instance.ShowFinished();
+
+            StartCoroutine(ResetSpriteWithDelay());
+            Invoke(nameof(LoadEnd), 2f);
         }
         else
         {
@@ -122,21 +90,6 @@ public class QuestGiverTeacher : MonoBehaviour, IIteractable
 
             StartCoroutine(ResetSpriteWithDelay());
         }
-    }
-
-    private void OnDefenseWon()
-    {
-        FinishGame();
-    }
-
-    private void FinishGame()
-    {
-        inventory.RemoveItemByID(finalCraftedItemID);
-
-        QuestTeacherUI.Instance.ShowFinished();
-
-        StartCoroutine(ResetSpriteWithDelay());
-        Invoke(nameof(LoadEnd), 2f);
     }
 
     string GetRemainingTeachersMessage()

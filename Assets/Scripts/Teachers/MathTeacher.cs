@@ -55,12 +55,10 @@ public class MathTeacher : MonoBehaviour, IIteractable
             if (int.TryParse(playerAnswer, out int result) && result == correctAnswer)
             {
                 StartCoroutine(GiveItemRoutine());
-                TowerDefenseManager.Instance?.RegisterQuizAnswer(true);
             }
             else
             {
                 MathDialogUI.Instance.ShowMessage("INCORRECT !   TRY   AGAIN   NEXT   TIME   :(");
-                TowerDefenseManager.Instance?.RegisterQuizAnswer(false);
                 StartCoroutine(ResetSpriteWithDelay());
             }
         });
